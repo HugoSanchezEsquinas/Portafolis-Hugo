@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Activitat 9 - Formularis</title>
+</head>
+<body>
+ 
+<!--Exercici 1-->
+
+<h1>Exercici 1: Crear un formulari bàsic de contacte</h1>
+
+<form>
+
+    <!--Nom-->
+
+        <label for="nom">Nom:</label><br>
+        <input type="text" id="nom" name="nom"><br><br>
+
+    <!--Correu electrònic-->
+
+        <lable for="email">Correu electrònic</lable><br>
+        <input type="email" id="email" name="email"><br><br>
+
+    <!--Missatge-->
+
+        <label for="missatge">Missatge:</label><br>
+        <textarea id="missatge" name="missatge"></textarea><br><br>
+
+    <!--Botó d'enviament-->        
+
+        <input type="submit" value="Enviar">
+
+</form>    
+
+<!--Exercici 2-->
+
+<h1>Exercici 2: Formularis amb validació bàsica de camps</h1>
+
+<form>
+
+    <!--Nom-->
+
+        <label for="nom">Nom:</label><br>
+        <input type="text" id="nom" name="nom"><br><br>
+
+    <!--Correu electrònic-->
+
+        <lable for="email">Correu electrònic</lable><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+    <!--Missatge-->
+
+        <label for="missatge">Missatge:</label><br>
+        <textarea id="missatge" name="missatge" minlength="10"></textarea><br><br>
+
+    <!--Botó d'enviament-->        
+
+        <input type="submit" value="Enviar">
+
+</form>    
+
+<!--Exercici 3-->
+
+<h1>Exercici 3: Formulari amb diferents tipus de camps</h1>
+
+<form>
+
+    <!--Nom-->
+
+        <label for="nom">Nom:</label><br>
+        <input type="text" id="nom" name="nom"><br><br>
+
+    <!--Data de naixement-->
+
+        <lable for="data">Data de naixement</lable><br>
+        <input type="date" id="data" name="data"><br><br>
+
+    <!--Gènere-->
+
+        <input type="radio" id="masculi" name="genere" value="masculi">
+        <label for="masculi">Masculí</label><br>
+        
+        <input type="radio" id="femeni" name="genere" value="femeni">   
+        <label for="femeni">Femení</label><br>
+
+        <input type="radio" id="altre" name="genere" value="altre">
+        <label for="altre">Un altre</label><br><br>
+
+    <!--Aficions-->
+
+        <input type="checkbox" id="musica" name="aficions" value="musica">
+        <label for="musica">Música</label><br>
+
+        <input type="checkbox" id="esport" name="aficions" value="esport">
+        <label for="esport">Esport</label><br>
+
+        <input type="checkbox" id="lectura" name="aficions" value="lectura">
+        <label for="lectura">Lectura</label><br>
+
+        <input type="checkbox" id="viatjar" name="aficions" value="viatjar">
+        <label for="viatjar">Viatjar</label><br>
+    
+    <!-- Comentaris -->
+
+        <label for="comentaris">Comentaris:</label><br>
+        <textarea id="comentaris" name="comentaris" maxlength="200"></textarea><br>
+
+    <!--Botó d'enviament-->        
+
+        <input type="submit" value="Enviar">
+
+</form>
+
+<!--Exercici 4-->
+
+<h1>Exercici 4: Formulari de registre amb diversos camps</h1>
+
+<form>
+
+    <!--Nom complet-->
+
+        <label for="nom">Nom complet:</label><br>
+        <input type="text" id="nom" name="nom" required><br><br>  
+
+    <!--Correu electrònic-->
+
+        <label for="email">Correu electrònic:</label><br>
+        <input type="email" id="email" name="email" required><br><br>  
+
+    <!--Contrasenya-->
+
+        <lable for="password">Contrasenya:</label><br>
+        <input type="password" id="password" name="password" required><br><br>
+
+    <!--Confirmar contrasenya-->
+
+        <label for="confirmar">Confirma la contrasenya:</label><br>
+        <input type="password" id="confirmar" name="confirmar" required><br><br>
+
+    <!--Acceptar termes-->
+
+        <input type="checkbox" id="termes" name="termes" required>
+        <label for="termes">Accepto els termes i condicions</label><br><br>
+
+    <!--Botó d'enviament-->        
+
+        <input type="submit" value="Enviar" required>
+
+</form>
+
+</body>
+
+</html>

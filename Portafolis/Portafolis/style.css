@@ -1,0 +1,137 @@
+:root{
+--color-1:#000000;
+--color-2:#FF1501;
+--color-3:#78FAB2;
+--color-4:#503734;
+--color-5:#647A6E;
+--petit:0rem;
+--mitja:1rem;
+--gran:2rem;
+}
+
+
+
+body {
+  margin: 0;
+  padding-top: 100px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+/*posistion fixed per a que el menú es mantingui sempre a la part superior de la web*/
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: var(--color-1);
+  z-index: 1000;
+}
+
+
+.menu {
+  background: var(--color-1);
+  padding: var(--mitja);  
+  display: flex;
+  justify-content: flex-end;
+  
+}
+
+/*margin i gap per a fer el menú més ampli i ordenar*/
+.menu ul {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  margin: 10px;
+  padding: var(--petit);
+}
+
+.menu a {
+  color: var(--color-2);
+  padding: 8px 15px;
+  transition: all 0.3s ease;
+}
+
+/*border radius per a fer els bordes dels botons més arrodonits*/
+.menu a:hover {
+  background: var(--color-2);
+  color: var(--color-1);
+  border-radius: 20px;
+}
+
+
+.titol{
+  border-radius: 10px;
+  padding: 10px;
+  color: var(--color-4);
+  background-color: var(--color-3);
+  display: flex;
+  justify-content: center;
+}
+
+.bordes{
+  max-width: 1100px;
+  padding: var(--gran);
+}
+
+/*border per aplicarli un borde notable a un taxt*/
+.marc{
+  border: 2px solid var(--color-2);
+  padding: var(--gran);
+  text-align: center;
+}
+
+/*flex direction row per a forçar que es posi en vertical paralelament*/
+.informacio-personal{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    margin: var(--petit);
+    align-items: center;
+}
+
+.text{
+    width: 60%;
+  text-align: center;
+}
+
+.imagen{
+    width: 40%;
+}
+
+.imagen img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.centrar{
+  text-align: center;
+}
+
+.boton{
+    color: var(--color-5);
+}
+
+/*@media per a transformar la pagina per a movil*/
+@media (max-width: 750px){
+
+    .informacio-personal{
+        flex-direction: column; 
+        text-align: center;
+    }
+
+    .text{
+        width: 100%;
+    }
+
+    .imagen{
+        width: 100%;
+    }
+
+    .menu ul{
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
